@@ -61,6 +61,10 @@
   max-width: 55ch;
 }
 
+.call-to-action {
+  margin-bottom: 20px;
+}
+
 fieldset {
   padding: 20px 50px;
   background-color: white;
@@ -134,4 +138,8 @@ input {
   text-decoration: none;
   color: #7d8b70;
   font-weight: bold;
+}
+
+.log-in {
+  margin-left: 50px;
 }
