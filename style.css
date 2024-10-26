@@ -129,3 +129,9 @@ input {
   scale: 0.9px;
   background-color: #7d8b70;
 }
+
+.login {
+  text-decoration: none;
+  color: #7d8b70;
+  font-weight: bold;
+}
