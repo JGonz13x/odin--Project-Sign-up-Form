@@ -87,13 +87,28 @@ fieldset {
 }
 
 .password-not-match {
-  position: absolute;
-  bottom: 20px;
-  font-size: 0.85rem;
-  color: red;
+  .password-error {
+    visibility: visible;
+
+    bottom: 15px;
+    font-size: 0.85rem;
+    color: red;
+  }
+
   .password {
     border-radius: 5px;
     border-color: rgb(255, 0, 0);
+    border-style: solid;
+  }
+}
+
+.password-match {
+  .password-error {
+    visibility: hidden;
+  }
+  .password {
+    border-radius: 5px;
+    border-color: rgb(21, 193, 216);
     border-style: solid;
   }
 }
