@@ -38,15 +38,20 @@
               <div class="name">
                 <label for="firstName">FIRST NAME</label>
                 <label for="lastName">LAST NAME</label>
-                <input type="text" name="firstName" id="firstName" />
-                <input type="text" name="lastName" id="lastName" />
+                <input type="text" name="firstName" id="firstName" required />
+                <input type="text" name="lastName" id="lastName" required />
               </div>
 
               <div class="name">
                 <label for="email">EMAIL</label>
                 <label for="phone-number">PHONE NUMBER</label>
-                <input type="email" name="email" id="email" />
-                <input type="number" name="phone-number" id="phone-number" />
+                <input type="email" name="email" id="email" required />
+                <input
+                  type="number"
+                  name="phone-number"
+                  id="phone-number"
+                  required
+                />
               </div>
 
               <div class="name">
@@ -57,12 +62,14 @@
                   class="password"
                   name="password"
                   id="password"
+                  required
                 />
                 <input
                   class="password"
                   type="password"
                   name="confirm-password"
                   id="confirm-password"
+                  required
                 />
               </div>
               <div class="password-error">
