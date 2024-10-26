@@ -1,0 +1,131 @@
+@font-face {
+  font-family: norse;
+  src: url(/font/Norse-Bold.otf);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  /* outline-width: 1px;
+  outline-color: red;
+  outline-style: solid; */
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 40vw 1fr;
+}
+
+.side-design {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-background {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.logo-container {
+  background-color: rgba(0, 0, 0, 0.212);
+  color: white;
+  font-family: norse;
+  margin-top: 175px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  position: absolute;
+  font-size: 5rem;
+}
+
+.logo {
+  height: 100%;
+  padding: 5px 0;
+}
+
+.forms-division {
+  background-color: #f9fafb;
+}
+
+.note {
+  margin: 100px 0px 50px 50px;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  max-width: 55ch;
+}
+
+fieldset {
+  padding: 20px 50px;
+  background-color: white;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(107, 102, 102, 0.158);
+  position: relative;
+}
+
+.name {
+  gap: 0px 30px;
+  display: grid;
+  font-size: 0.8rem;
+  font-weight: bold;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 20px 20px 20px;
+}
+
+.password-error {
+  visibility: hidden;
+}
+
+.password-not-match {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.85rem;
+  color: red;
+  .password {
+    border-radius: 5px;
+    border-color: rgb(255, 0, 0);
+    border-style: solid;
+  }
+}
+
+input:focus {
+  border-radius: 5px;
+  border-color: #326fe9;
+  border-style: solid;
+  outline: none;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.267);
+}
+input {
+  border: 2px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.submit {
+  background-color: #596d48;
+  border: none;
+  margin: 20px 50px;
+  padding: 10px;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.01rem;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.submit:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.submit:active {
+  scale: 0.9px;
+  background-color: #7d8b70;
+}
